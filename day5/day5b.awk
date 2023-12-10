@@ -47,7 +47,7 @@ $1 ~ /^[a-z]/ {
             inputmin = mapmin
         }
 
-        # Add non-overlapping range below as a new range
+        # Add non-overlapping range above as a new range
         if (inputmax > mapmax) {
             rangestoadd[mapmax + 1] = inputmax
             inputmax = mapmax
