@@ -1,7 +1,7 @@
 #!/bin/awk -f
 # run with awk -F' ' -f day5b.awk input.txt
 
-# Save ranges from line 1 to inputrange
+# Line 1: Save ranges to inputrange
 NR == 1 {
     $1 = ""
     split($0,seeds," ")
